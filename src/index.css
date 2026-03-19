@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-background antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .editorial-shadow {
+    box-shadow: 0 12px 32px -4px rgba(19, 27, 46, 0.06);
+  }
+  
+  .glass-overlay,
+  .glass-panel {
+    background: rgba(218, 226, 253, 0.7);
+    backdrop-filter: blur(20px);
+  }
+}
