@@ -1,16 +1,22 @@
-# React + Vite
+# 🦄 GuideWire DevTrails '26: Project Unicorn
+### AI-Powered Parametric Insurance for the Gig Economy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+This platform provides a real-time safety net for India's delivery partners. Using **Parametric Insurance** logic, we automate income protection for workers hit by environmental disruptions (floods, extreme heat, or strikes), ensuring they get paid even when the apps stop running.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Vite, Tailwind CSS (Responsive Admin & Worker Dashboard)
+- **Backend:** Java Spring Boot (Policy & Financial Ledger Management)
+- **AI/ML:** Python FastAPI (Dynamic Risk Scoring & OCR Income Verification)
+- **Database:** PostgreSQL (Transactional) & MongoDB (Event Logging)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
+- **Automated Parametric Triggers:** 3-5 mock API integrations (Weather/Traffic) that trigger payouts without manual claims.
+- **AI Risk Engine:** Dynamically calculates weekly premiums (2-3%) based on hyper-local city tiers and disaster frequency.
+- **OCR Income Verification:** ML-based scanning of worker earning screenshots to establish a baseline for 70% income coverage.
+- **Instant Payouts:** Simulated UPI/Wallet transfers triggered immediately upon disruption detection.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📈 Financial Model (Rulebook Compliant)
+- **Cycle:** Strict Weekly Premium & Coverage.
+- **Coverage:** 70% of verified weekly income.
+- **Tiers:** Tier-1 (Medium Risk), Tier-2 (Med-High), Tier-3 (High Risk).
