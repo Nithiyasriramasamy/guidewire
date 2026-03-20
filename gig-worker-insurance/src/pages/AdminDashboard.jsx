@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, AlertTriangle, ShieldAlert, Activity, ArrowUpRight } from 'lucide-react';
+import { Users, AlertTriangle, ShieldAlert, Activity, ArrowUpRight, IndianRupee } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
 const data = [
@@ -21,8 +21,15 @@ const AdminDashboard = () => {
           <p className="text-slate-500">System metrics and fraud detection overview.</p>
         </div>
         <div className="flex space-x-3">
+           <a 
+             href="https://guardian-grid-lyart.vercel.app/" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition flex items-center gap-2"
+           >
+             Advanced Parametric Dashboard <ArrowUpRight className="w-4 h-4" />
+           </a>
            <button className="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg font-medium hover:bg-slate-50 transition">Export Report</button>
-           <button className="bg-slate-900 text-white px-4 py-2 rounded-lg font-medium hover:bg-slate-800 transition">Manage Rules</button>
         </div>
       </div>
 

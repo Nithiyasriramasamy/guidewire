@@ -12,7 +12,8 @@ const Layout = () => {
     { name: 'Live Events', href: '/events', icon: AlertCircle },
     { name: 'Claims', href: '/claims', icon: FileText },
     { name: 'Payouts', href: '/payout', icon: IndianRupee },
-    { name: 'Admin', href: '/admin', icon: Settings },
+    { name: 'Admin Dashboard', href: '/admin', icon: Settings },
+    { name: 'Guardian Grid (Parametric)', href: 'https://guardian-grid-lyart.vercel.app/', icon: ShieldCheck, external: true },
   ];
 
   const closeMenu = () => setIsMobileMenuOpen(false);
@@ -40,12 +41,32 @@ const Layout = () => {
           {navigation.map((item) => {
             const Icon = item.icon;
             const isActive = location.pathname === item.href;
+            const commonClasses = `flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors ${isActive ? 'bg-blue-50 text-blue-700' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'}`;
+            const iconClasses = `mr-3 h-5 w-5 ${isActive ? 'text-blue-600' : 'text-slate-400'}`;
+
+            if (item.external) {
+              return (
+                <a 
+                  key={item.name} 
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={commonClasses}
+                >
+                  <Icon className={iconClasses} />
+                  {item.name}
+                </a>
+              );
+            }
+
             return (
               <NavLink 
                 key={item.name} 
                 to={item.href}
                 onClick={closeMenu}
-                className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors ${isActive ? 'bg-blue-50 text-blue-700' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'}`}
+                className={({ isActive }) => 
+                  `flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors ${isActive ? 'bg-blue-50 text-blue-700' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'}`
+                }
               >
                 <Icon className={`mr-3 h-5 w-5 ${isActive ? 'text-blue-600' : 'text-slate-400'}`} />
                 {item.name}
