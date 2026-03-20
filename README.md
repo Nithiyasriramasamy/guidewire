@@ -218,7 +218,7 @@ Why MCP Matters Here
 
 Without MCP, the system becomes tightly coupled to many separate API integrations. With MCP, GuardianGrid gains a cleaner architecture where the insurance logic can focus on decisions rather than raw data handling.
 
-🧠 AI/ML Integration Plan
+🧠 **AI/ML Integration Plan**
 
 GuardianGrid uses AI/ML in important layers:
 
@@ -279,7 +279,7 @@ suspicious behavior across integrated data sources
 
 Suggested model: Isolation Forest
 
-Phase 1 AI/ML Scope
+**Phase 1 AI/ML Scope**
 
 For this phase, the solution demonstrates the AI/ML plan through:
 
@@ -291,7 +291,7 @@ fraud detection design and anomaly-check workflow
 
 architecture for later ML model integration
 
-🧱 Architecture: B2B2C Microservices Approach
+🧱** Architecture: B2B2C Microservices Approach**
 
 A fully direct-to-consumer insurance app may struggle with customer acquisition, data validation, and false claims. GuardianGrid therefore uses a B2B2C architecture where insurers and delivery platforms become the primary integration layer.
 
@@ -317,26 +317,26 @@ Mobile-first worker interface and a web-based admin and partner dashboard.
 
 This architecture helps separate financial correctness, trigger processing, data integration, and operational intelligence.
 
-🛠️ Tech Stack
-Frontend
+🛠️ **Tech Stack**
+**Frontend**
 
 React / Next.js for dashboard
 
 Mobile-first responsive UI for worker interaction
 
-Backend
+**Backend**
 
 Java Spring Boot
 
 Python FastAPI
 
-Databases
+**Databases**
 
 PostgreSQL
 
 MongoDB
 
-AI / ML
+**AI / ML**
 
 Python
 
@@ -346,7 +346,7 @@ PyTorch
 
 TensorFlow
 
-Models Used
+**Models Used**
 1. Risk Prediction Model
 
 We use a Random Forest / XGBoost classifier to estimate the likelihood of disruption-based income loss using weather, AQI, traffic, and zone-level historical data.
@@ -359,7 +359,7 @@ We use a regression model to estimate the rider’s expected earnings during a p
 
 We use Isolation Forest-based anomaly detection to identify suspicious payout patterns such as location inconsistency, repeated claims, inactivity during disruption windows, and duplicate claims.
 
-Integrations
+**Integrations**
 
 Weather APIs (live or mock)
 
@@ -373,7 +373,7 @@ Platform-side rider and order data (simulated)
 
 Payment gateway / UPI mock integrations
 
-MCP-based connector layer
+**MCP-based connector layer**
 
 🧪 Phase 1 Prototype Scope
 
@@ -436,7 +436,7 @@ refine hyperlocal trigger validation
 
 strengthen partner and admin insights and reporting
 
-⚠️ Key Design Challenge
+⚠️ **Key Design Challenge**
 
 One of the main product challenges is balancing meaningful worker relief with financial sustainability.
 
@@ -453,7 +453,7 @@ Payout = {
 
 This creates a model that is simple, explainable, and practical for hackathon prototyping.
 
-🏆 Why GuardianGrid is Different
+🏆 **Why GuardianGrid is Different**
 
 focuses on income loss, not general insurance categories
 
@@ -469,11 +469,11 @@ fits naturally into a platform-integrated B2B2C model
 
 uses MCP for cleaner real-time data orchestration
 
-📚 What We Learned
+📚 **What We Learned**
 
 This problem is not just about building an app. It requires understanding workers, payout trust, event-driven architecture, actuarial trade-offs, fraud control, API integration, and the operational realities of India’s gig economy. Designing GuardianGrid helped us think beyond basic CRUD systems and toward resilient, real-time financial workflows.
 
-🔮 Future Scope
+🔮** Future Scope**
 Hyperlocal Basis-Risk Reduction
 
 Combine weather signals with traffic slowdown and zone-level operational signals for more accurate disruption validation.
@@ -490,7 +490,7 @@ Partner-Side Expansion
 
 Extend the platform to more gig categories beyond food and grocery delivery.
 
-📹 Phase 1 Submission Assets
+📹** Phase 1 Submission Assets**
 
 Idea Document: This README
 
@@ -498,7 +498,7 @@ Git Repository: Add your GitHub / GitLab repository link here
 
 2-Minute Video: Add your public video link here
 
-💻 Developer Quickstart
+💻** Developer Quickstart**
 <details> <summary><b>Click to expand local installation instructions</b></summary>
 Prerequisites
 
