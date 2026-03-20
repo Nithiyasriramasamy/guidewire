@@ -211,7 +211,7 @@ Instead of the backend separately handling weather, AQI, traffic, and rider-cont
   "rider_active": true,
   "risk_time": "2026-03-20T18:00:00"
 }
-
+ ```
 This makes downstream trigger evaluation and fraud checks simpler and more reliable.
 
 Why MCP Matters Here
