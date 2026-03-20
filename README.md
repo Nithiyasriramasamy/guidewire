@@ -202,15 +202,6 @@ It helps us:
 
 Instead of the backend separately handling weather, AQI, traffic, and rider-context APIs one by one, MCP can gather those signals and return a unified response such as:
 
-```json
-{
-  "zone_id": "CHN_04",
-  "rainfall_mm": 62,
-  "aqi": 318,
-  "avg_speed_kmph": 6,
-  "rider_active": true,
-  "risk_time": "2026-03-20T18:00:00"
-}
 
 This makes downstream trigger evaluation and fraud checks simpler and more reliable.
 
