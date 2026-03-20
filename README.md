@@ -41,7 +41,7 @@ Handling automated financial transactions alongside high-velocity environmental 
     * `MongoDB`: The NoSQL velocity sink handling thousands of external environmental API pings without blocking the main ledger.
 * **The AI Engine (`Python / FastAPI`):** Rather than draining worker batteries with continuous GPS telemetry, we engineered a **Battery-Safe Spatial Anomaly Engine**. We verify coordinates only *at the millisecond* a claim is triggered. To prevent multi-homing fraud (claiming a rain-out on one app while delivering for another), we utilize India's Account Aggregator (AA) framework to run lightweight, retrospective audits on bank deposits over a 30-day lifecycle. 
 
-*Note: AI model training and rapid local inference prototyping were accelerated utilizing a dedicated NVIDIA RTX 3050 (6GB VRAM) pipeline prior to cloud deployment.*
+
 
 ---
 
