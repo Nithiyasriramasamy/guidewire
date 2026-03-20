@@ -228,7 +228,16 @@ This architecture helps separate financial correctness, trigger processing, and 
 
 ### AI / ML
 - Python
-- Scikit-learn / rule-based prototypes for Phase 1
+- Scikit-learn , PyTorch , TensorFlow
+  
+### 1. Risk Prediction Model
+We use a Random Forest / XGBoost classifier to estimate the likelihood of disruption-based income loss using weather, AQI, traffic, and zone-level historical data.
+
+### 2. Income Prediction Model
+We use a regression model to estimate the rider’s expected earnings during a protected shift block. The difference between expected income and actual income helps quantify disruption-linked income loss.
+
+### 3. Fraud Detection Model
+We use Isolation Forest-based anomaly detection to identify suspicious payout patterns such as location inconsistency, repeated claims, inactivity during disruption windows, and duplicate claims.
 
 ### Integrations
 - Weather APIs (live or mock)
